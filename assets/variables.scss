@@ -1,0 +1,34 @@
+// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
+//
+// The variables you want to modify
+// $font-size-root: 20px;
+
+@import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt&family=Sarabun:wght@300&display=swap');
+
+
+$body-font-family: 'Sarabun', sans-serif, 'Arial', 'Tahoma', Helvetica;
+$heading-font-family: 'Prompt', sans-serif, 'Arial', 'Tahoma', 'Helvetica';
+$font-size-root: 18px;
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Prompt', sans-serif, 'Arial', 'Tahoma', 'Helvetica';
+}
+
+// a {
+//   text-decoration: none;
+// }
+
+/* .v-btn {
+	text-transform: capitalize !important;
+} */
+
+// .pre-formatted {
+//   white-space: pre-wrap;
+// }
