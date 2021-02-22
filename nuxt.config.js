@@ -2,6 +2,8 @@ import colors from 'vuetify/es5/util/colors'
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
+
+  target: 'server',
   head: {
     titleTemplate: '%s - readnavi',
     title: 'readnavi',
@@ -13,7 +15,21 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'preload',
+        href:
+          'https://fonts.googleapis.com/css2?family=Prompt&family=Sarabun:wght@300&display=swap',
+        as: 'style',
+      },
+      {
+        rel: 'preload',
+        href:
+          'https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css',
+        as: 'style',
+      },
+    ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

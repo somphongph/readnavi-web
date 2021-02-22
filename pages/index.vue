@@ -32,36 +32,12 @@
             </v-card>
           </div>
 
-          <div class="text-h6 mt-10 mb-2">Menus</div>
-          <div>asdfasdfasdf</div>
           <div class="text-h6 mt-10 mb-2">Reviews</div>
           <div>asdfasdfasdf</div>
           <div class="text-h6 mt-10 mb-2">Details</div>
           <div>asdfasdfasdf</div>
         </v-col>
         <v-col cols="12" md="4"></v-col>
-      </v-row>
-
-      <div class="text-h6 mt-10 mb-2">Near By</div>
-      <v-row>
-        <v-col cols="12" md="4">
-          <v-card>
-            <v-card-title primary-title> Travel </v-card-title>
-            <v-card-text> Travel </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="4">
-          <v-card>
-            <v-card-title primary-title> Food </v-card-title>
-            <v-card-text> Food </v-card-text>
-          </v-card>
-        </v-col>
-        <v-col cols="12" md="4">
-          <v-card>
-            <v-card-title primary-title> Stay </v-card-title>
-            <v-card-text> Stay </v-card-text>
-          </v-card>
-        </v-col>
       </v-row>
     </v-container>
   </v-responsive>
