@@ -5,8 +5,8 @@ services:
     build: .
     container_name: rdi-web
     restart: always
-    ports:
-      - "3000:3000"
+    # ports:
+    #   - "3000:3000"
     command:
       "npm run start"
 

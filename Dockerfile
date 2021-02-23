@@ -18,9 +18,9 @@ RUN npm run build
 # RUN rm /etc/nginx/conf.d/default.conf
 # COPY .nginx/default.conf /etc/nginx/conf.d
 
-EXPOSE 3000
+EXPOSE 80
 
 ENV NUXT_HOST=0.0.0.0
-ENV NUXT_PORT=3000
+ENV NUXT_PORT=80
 
 # CMD ["npm", "start"]
