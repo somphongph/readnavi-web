@@ -7,20 +7,15 @@ WORKDIR /app
 # ARG HOST 
 
 COPY package*.json ./
-RUN npm install
+RUN npm install --silent
 COPY ./ ./
-RUN npm run build
+RUN npm run generate
 
 # production stage
-# FROM nginx:1.17-alpine as production-stage
-# WORKDIR /usr/share/nginx/html
-# COPY --from=dependency-stage /app/.nuxt ./
+FROM nginx:1.17-alpine as production-stage
+COPY --from=dependency-stage /app/dist /usr/share/nginx/html
 # RUN rm /etc/nginx/conf.d/default.conf
-# COPY .nginx/default.conf /etc/nginx/conf.d
+# COPY nginx/default.conf /etc/nginx/conf.d
 
 EXPOSE 80
-
-ENV NUXT_HOST=0.0.0.0
-ENV NUXT_PORT=80
-
-# CMD ["npm", "start"]
+CMD ["nginx", "-g", "daemon off;"]
