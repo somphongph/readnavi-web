@@ -3,7 +3,6 @@ import colors from 'vuetify/es5/util/colors'
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   // ssr: true,
-  target: 'static',
   head: {
     titleTemplate: '%s - readnavi',
     title: 'readnavi',
@@ -18,16 +17,16 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
-        rel: 'preload',
+        rel: 'stylesheet preload',
+        as: 'style',
         href:
           'https://fonts.googleapis.com/css2?family=Prompt&family=Sarabun:wght@300&display=swap',
-        as: 'style',
       },
       {
-        rel: 'preload',
+        rel: 'stylesheet preload',
+        as: 'style',
         href:
           'https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css',
-        as: 'style',
       },
     ],
   },
@@ -62,6 +61,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     treeShake: true,
+    defaultAssets: false,
     theme: {
       dark: false,
       themes: {
